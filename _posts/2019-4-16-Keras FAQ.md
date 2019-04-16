@@ -290,7 +290,6 @@ import h5py
 with h5py.File('input/file.hdf5','r') as f:
       x_data = f['x_data']
       model.predict(x_data)
-      
 ```
 ### Where is the Keras configuration file stored? (Keras 配置文件保存在哪里？)
 所有 Keras 数据存储的默认目录是：
@@ -358,8 +357,6 @@ K.set_session(sess)
 ### How can I install HDF5 or h5py to save my models in Keras? (如何在 Keras 中安装 HDF5 或 h5py 来保存我的模型？)
 为了将你的 Keras 模型保存为 HDF5 文件，例如通过` keras.callbacks.ModelCheckpoint`，Keras 使用了 h5py Python 包。h5py 是 Keras 的依赖项，应默认被安装。在基于 Debian 的发行版本上，你需要再额外安装 `libhdf5`：
 
-`sudo apt-get install libhdf5-serial-dev
-`
+`sudo apt-get install libhdf5-serial-dev`
 如果你不确定是否安装了 h5py，则可以打开 Python shell 并通过下面的命令加载模块
-`import h5py
-`
+`import h5py`
