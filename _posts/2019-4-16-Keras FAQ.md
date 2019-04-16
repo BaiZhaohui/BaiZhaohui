@@ -1,3 +1,7 @@
+---
+layout: post
+title: Keras FAQ
+---
 ### What does "sample", "batch", "epoch" mean?
 - #### Sample:
   - 样本，数据集中的一个元素，一条数据
